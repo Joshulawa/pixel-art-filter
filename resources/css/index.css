@@ -1,0 +1,54 @@
+:root {
+    --pxlPerRow: 3;
+    --x: 0px; /*x is the width and height for each pixel*/
+
+}
+
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    color: seagreen;
+    text-align: center;
+}
+
+.square {
+    width: var(--x);
+    height: var(--x);
+}
+
+input[type='file'] {
+    color: transparent;
+  }
+
+input[type="number"]{
+    width: 66%;
+
+}
+
+.inputImg {
+    display: none
+}
+
+.horizontal-center {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    margin: 0 auto;
+    position: absolute;
+    left: 38%;
+    /* -ms-transform: translateX(-50%);
+    transform: translateX(-50%); */
+  }
+
+.title-center {
+    left: 30%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(var(--pxlPerRow), var(--x));
+    grid-auto-columns: auto;
+}
+
+
